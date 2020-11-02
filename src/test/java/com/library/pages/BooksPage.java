@@ -11,6 +11,9 @@ public class BooksPage extends BasePage{
     @FindBy(xpath = "//select[@name='tbl_books_length']")
     private WebElement showsRecordDropDownMenu;
 
+    @FindBy(id="book_categories")
+    private WebElement categoriesDropDownMenu;
+
     public void selectShowsRecordDropDownMenu(String records){
         BrowserUtility.wait(2);
         Select select = new Select(showsRecordDropDownMenu);
@@ -20,6 +23,12 @@ public class BooksPage extends BasePage{
     public String showsRecordValue(String records){
         BrowserUtility.wait(2);
         return showsRecordDropDownMenu.getAttribute("value");
+    }
+
+    public void selectCategoriesDropDownMenu(String categorie){
+        BrowserUtility.wait(2);
+        Select select = new Select(categoriesDropDownMenu);
+        select.selectByValue(categorie);
     }
 
 }
