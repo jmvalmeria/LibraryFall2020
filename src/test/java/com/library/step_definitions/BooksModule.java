@@ -72,6 +72,8 @@ public class BooksModule {
         String actualCategory = displayedCategories.get(0).getText();
 
         Assert.assertEquals("The Displayed Category is not displayed, Verification Failed!!!",actualCategory,categories);
+        System.out.println("Drama books are displayed!");
+        Driver.closeDriver();
     }
 
 }

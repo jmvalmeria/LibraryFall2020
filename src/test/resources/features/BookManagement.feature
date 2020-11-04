@@ -5,6 +5,11 @@ Feature: User should be able to maintain the books by using Books module
     Given user logged in successfully
     And user located at Books module
 
+  @BooksModule @AC4
+  Scenario: As a user I should be able to select a category of the book by using the dropdown menu
+    When User click on Books Categories dropDown menu and select "Drama"
+    Then User should be able to see "Drama" books on the books grid
+
   @BooksModule @AC5
   Scenario Outline: user I should be able to select a number of records per page by using the dropdown menu
     When click on Show records dropDown menu and select "<selectValue>"
@@ -19,8 +24,3 @@ Feature: User should be able to maintain the books by using Books module
       | 100         | 100            |
       | 200         | 200            |
       | 500         | 500            |
-
-  @BooksModule @AC4
-  Scenario: As a user I should be able to select a category of the book by using the dropdown menu
-    When User click on Books Categories dropDown menu and select "Drama"
-    Then User should be able to see "Drama" books on the books grid
