@@ -51,4 +51,27 @@ public class BooksModule {
         Driver.closeDriver();
     }
 
+    @When("User click on Books Categories dropDown menu and select {string}")
+    public void user_click_on_books_categories_drop_down_menu_and_select(String categories) {
+        booksPage.selectCategoriesDropDownMenu(categories);
+        BrowserUtility.wait(1);
+        System.out.println(categories + " is selected in the drop down menu!");
+    }
+
+    @Then("User should be able to see {string} books on the books grid")
+    public void user_should_be_able_to_see_books_on_the_books_grid(String categories) {
+        List<WebElement> displayedCategories = Driver.getDriver().findElements(By.xpath("//table[@id='tbl_books']//tr/td[5]"));
+
+        for (WebElement each : displayedCategories){
+            String displayElement = each.getText();
+            if (!displayElement.contains(categories)){
+                System.out.println(displayElement + "is different than " + categories);
+            }
+        }
+
+        String actualCategory = displayedCategories.get(0).getText();
+
+        Assert.assertEquals("The Displayed Category is not displayed, Verification Failed!!!",actualCategory,categories);
+    }
+
 }

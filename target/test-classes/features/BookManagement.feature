@@ -19,3 +19,8 @@ Feature: User should be able to maintain the books by using Books module
       | 100         | 100            |
       | 200         | 200            |
       | 500         | 500            |
+
+  @BooksModule @AC4
+  Scenario: As a user I should be able to select a category of the book by using the dropdown menu
+    When User click on Books Categories dropDown menu and select "Drama"
+    Then User should be able to see "Drama" books on the books grid

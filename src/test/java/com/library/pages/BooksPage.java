@@ -25,10 +25,10 @@ public class BooksPage extends BasePage{
         return showsRecordDropDownMenu.getAttribute("value");
     }
 
-    public void selectCategoriesDropDownMenu(String categorie){
+    public void selectCategoriesDropDownMenu(String categories){
         BrowserUtility.wait(2);
         Select select = new Select(categoriesDropDownMenu);
-        select.selectByValue(categorie);
+        select.selectByVisibleText(categories);
     }
 
 }
