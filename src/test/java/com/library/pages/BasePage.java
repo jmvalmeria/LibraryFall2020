@@ -18,4 +18,8 @@ public abstract class BasePage {
         return Driver.getDriver().getCurrentUrl();
     }
 
+    public String getTitle(){
+        return Driver.getDriver().getTitle();
+    }
+
 }

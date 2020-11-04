@@ -10,6 +10,9 @@ public class HomePage extends BasePage {
     @FindBy(partialLinkText = "Books")
     private WebElement bookModuleLink;
 
+    @FindBy(partialLinkText = "Users")
+    private WebElement usersModuleLink;
+
     public String getPageUrl(){
 
         return Driver.getDriver().getCurrentUrl();
@@ -19,5 +22,11 @@ public class HomePage extends BasePage {
         BrowserUtility.wait(2);
         bookModuleLink.click();
         System.out.println("Books link clicked!");
+    }
+
+    public void clickOnUsersModule(){
+        BrowserUtility.wait(1);
+        usersModuleLink.click();
+        System.out.println("User link clicked!");
     }
 }
