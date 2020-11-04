@@ -15,18 +15,18 @@ public class BooksPage extends BasePage{
     private WebElement categoriesDropDownMenu;
 
     public void selectShowsRecordDropDownMenu(String records){
-        BrowserUtility.wait(2);
+        BrowserUtility.wait(1);
         Select select = new Select(showsRecordDropDownMenu);
         select.selectByValue(records);
     }
 
     public String showsRecordValue(String records){
-        BrowserUtility.wait(2);
+        BrowserUtility.wait(1);
         return showsRecordDropDownMenu.getAttribute("value");
     }
 
     public void selectCategoriesDropDownMenu(String categories){
-        BrowserUtility.wait(2);
+        BrowserUtility.wait(1);
         Select select = new Select(categoriesDropDownMenu);
         select.selectByVisibleText(categories);
     }

@@ -26,7 +26,7 @@ public class LoginStepsDefinitions {
 
     @Then("user should be able to land on dashboard page")
     public void user_should_be_able_to_land_on_dashboard_page() {
-        BrowserUtility.wait(2);
+        BrowserUtility.wait(1);
         String actual = homePage.getPageUrl();
         String expecting = "dashboard";
         Assert.assertTrue("URL NOT contains dashboard, validation FAILS!!!",actual.contains(expecting));

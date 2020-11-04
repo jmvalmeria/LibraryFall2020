@@ -14,6 +14,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class BooksModule {
 
@@ -39,6 +40,7 @@ public class BooksModule {
         System.out.println("Number: " + string + " of books is selected!");
         BrowserUtility.wait(1);
     }
+
     @Then("User should be able to see {string} book information on the books grid")
     public void user_should_be_able_to_see_book_information_on_the_books_grid(String string) {
         List<WebElement> displayedRecords = Driver.getDriver().findElements(By.xpath("//table[@id='tbl_books']//tr/td[2]"));
@@ -66,13 +68,14 @@ public class BooksModule {
             String displayElement = each.getText();
             if (!displayElement.contains(categories)){
                 System.out.println(displayElement + "is different than " + categories);
+                break;
             }
         }
-
+        System.out.println("Only " + categories +" books are displayed!");
         String actualCategory = displayedCategories.get(0).getText();
 
         Assert.assertEquals("The Displayed Category is not displayed, Verification Failed!!!",actualCategory,categories);
-        System.out.println("Drama books are displayed!");
+
         Driver.closeDriver();
     }
 
