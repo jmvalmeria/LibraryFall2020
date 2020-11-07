@@ -14,7 +14,7 @@ public class BrowserUtility {
     }
 
     //This method allow us to handle a DropDown Menu passing a WebElement and a String for value
-    public static void selectValue(WebElement webElement, String value){
+    public static void selectByValue(WebElement webElement, String value){
         Select select = new Select(webElement);
         select.selectByVisibleText(value);
     }
