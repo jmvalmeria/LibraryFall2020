@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features", //It looks for the feature in the path
         glue = "com/library/step_definitions", //It looks for the steps to perform the test
-        tags = "@AC4",
+        tags = "@AC5",
         dryRun = false
 )
 

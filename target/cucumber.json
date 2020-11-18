@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 7713000000,
+              "duration": 8031000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 3434000000,
+              "duration": 2156000000,
               "status": "passed"
             },
             "line": 6,
@@ -36,15 +36,15 @@
         ]
       },
       {
-        "start_timestamp": "2020-11-18T23:10:50.179Z",
-        "line": 9,
-        "name": "As a user I should be able to select a category of the book by using the dropdown menu",
+        "start_timestamp": "2020-11-18T23:35:49.831Z",
+        "line": 20,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
         "description": "",
-        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;as-a-user-i-should-be-able-to-select-a-category-of-the-book-by-using-the-dropdown-menu",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;2",
         "after": [
           {
             "result": {
-              "duration": 1290000000,
+              "duration": 774000000,
               "status": "passed"
             },
             "match": {
@@ -53,41 +53,41 @@
           }
         ],
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 2803000000,
+              "duration": 3215000000,
               "status": "passed"
             },
-            "line": 10,
-            "name": "User click on Books Categories dropDown menu and select \"Drama\"",
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"5\"",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Drama\"",
-                  "offset": 56
+                  "val": "\"5\"",
+                  "offset": 47
                 }
               ],
-              "location": "com.library.step_definitions.BooksModule.user_click_on_books_categories_drop_down_menu_and_select(java.lang.String)"
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 236000000,
+              "duration": 2035000000,
               "status": "passed"
             },
-            "line": 11,
-            "name": "User should be able to see \"Drama\" books on the books grid",
+            "line": 16,
+            "name": "User should be able to see \"5\" book information on the books grid",
             "match": {
               "arguments": [
                 {
-                  "val": "\"Drama\"",
+                  "val": "\"5\"",
                   "offset": 27
                 }
               ],
-              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_books_on_the_books_grid(java.lang.String)"
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
             },
             "keyword": "Then "
           }
@@ -100,7 +100,619 @@
             "name": "@BooksModule"
           },
           {
-            "name": "@AC4"
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4153000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2135000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:36:06.090Z",
+        "line": 21,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;3",
+        "after": [
+          {
+            "result": {
+              "duration": 1217000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3174000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2042000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"10\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"10\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4060000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2105000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:36:18.827Z",
+        "line": 22,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;4",
+        "after": [
+          {
+            "result": {
+              "duration": 714000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3168000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"15\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"15\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2020000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"15\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"15\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4378000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2109000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:36:30.910Z",
+        "line": 23,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;5",
+        "after": [
+          {
+            "result": {
+              "duration": 1210000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3183000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"50\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"50\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2042000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"50\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"50\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 3970000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2111000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:36:43.835Z",
+        "line": 24,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;6",
+        "after": [
+          {
+            "result": {
+              "duration": 1242000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3172000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"100\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2046000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"100\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"100\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4019000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2115000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:36:56.377Z",
+        "line": 25,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;7",
+        "after": [
+          {
+            "result": {
+              "duration": 1055000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3193000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"200\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2058000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"200\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"200\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
+          }
+        ]
+      },
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 4005000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2104000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:37:08.818Z",
+        "line": 26,
+        "name": "user I should be able to select a number of records per page by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;user-i-should-be-able-to-select-a-number-of-records-per-page-by-using-the-dropdown-menu;select-record-value--the-page-should-display-the-number-of-records;8",
+        "after": [
+          {
+            "result": {
+              "duration": 808000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3171000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on Show records dropDown menu and select \"500\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 47
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.click_on_show_records_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2127000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "User should be able to see \"500\" book information on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"500\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_book_information_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC5"
           }
         ]
       }

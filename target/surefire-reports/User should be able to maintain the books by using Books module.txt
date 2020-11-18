@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: User should be able to maintain the books by using Books module
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.822 s - in User should be able to maintain the books by using Books module
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 91.468 s - in User should be able to maintain the books by using Books module

@@ -37,13 +37,13 @@ public class BooksModule {
     public void click_on_show_records_drop_down_menu_and_select(String string) {
         booksPage.selectShowsRecordDropDownMenu(string);
         System.out.println("Number: " + string + " of books is selected!");
-        BrowserUtility.wait(1);
+        BrowserUtility.wait(2);
     }
 
     @Then("User should be able to see {string} book information on the books grid")
     public void user_should_be_able_to_see_book_information_on_the_books_grid(String string) {
         List<WebElement> displayedRecords = Driver.getDriver().findElements(By.xpath("//table[@id='tbl_books']//tr/td[2]"));
-        BrowserUtility.wait(1);
+        BrowserUtility.wait(2);
         String actualResult = ""+displayedRecords.size();
 
         System.out.println("Select: " + string + " records , displayed: " + actualResult + " books");
