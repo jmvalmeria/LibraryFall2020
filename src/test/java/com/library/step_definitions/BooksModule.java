@@ -14,7 +14,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 import java.util.List;
-import java.util.concurrent.TimeUnit;
 
 public class BooksModule {
 
@@ -50,7 +49,6 @@ public class BooksModule {
         System.out.println("Select: " + string + " records , displayed: " + actualResult + " books");
 
         Assert.assertEquals("Number of Records are not equal, Verification FAILED!!!",actualResult,string);
-        Driver.closeDriver();
     }
 
     @When("User click on Books Categories dropDown menu and select {string}")
@@ -75,8 +73,6 @@ public class BooksModule {
         String actualCategory = displayedCategories.get(0).getText();
 
         Assert.assertEquals("The Displayed Category is not displayed, Verification Failed!!!",actualCategory,categories);
-
-        Driver.closeDriver();
     }
 
 }

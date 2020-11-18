@@ -1,0 +1,124 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Login into the Library application",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 7713000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user logged in successfully",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_logged_in_successfully()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3434000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user located at Books module",
+            "match": {
+              "location": "com.library.step_definitions.BooksModule.user_located_at_books_module()"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-11-18T23:10:50.179Z",
+        "line": 9,
+        "name": "As a user I should be able to select a category of the book by using the dropdown menu",
+        "description": "",
+        "id": "user-should-be-able-to-maintain-the-books-by-using-books-module;as-a-user-i-should-be-able-to-select-a-category-of-the-book-by-using-the-dropdown-menu",
+        "after": [
+          {
+            "result": {
+              "duration": 1290000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.library.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2803000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User click on Books Categories dropDown menu and select \"Drama\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drama\"",
+                  "offset": 56
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_click_on_books_categories_drop_down_menu_and_select(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 236000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should be able to see \"Drama\" books on the books grid",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Drama\"",
+                  "offset": 27
+                }
+              ],
+              "location": "com.library.step_definitions.BooksModule.user_should_be_able_to_see_books_on_the_books_grid(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@BooksModule"
+          },
+          {
+            "name": "@AC4"
+          }
+        ]
+      }
+    ],
+    "name": "User should be able to maintain the books by using Books module",
+    "description": "",
+    "id": "user-should-be-able-to-maintain-the-books-by-using-books-module",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BookManagement.feature",
+    "tags": [
+      {
+        "name": "@BooksModule",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
