@@ -32,4 +32,5 @@ public class LoginPage extends BasePage {
         System.out.println("Library logged in successfully!");
     }
 
+    // I have a Git conflict
 }
