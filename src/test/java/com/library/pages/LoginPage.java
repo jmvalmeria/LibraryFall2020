@@ -31,6 +31,8 @@ public class LoginPage extends BasePage {
         password.sendKeys(passwordValue, Keys.ENTER);
         System.out.println("Library logged in successfully!");
     }
+    
+    //Git has a conflict
 
     // I have a Git conflict
 }
