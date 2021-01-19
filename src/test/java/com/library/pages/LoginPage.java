@@ -31,6 +31,8 @@ public class LoginPage extends BasePage {
         password.sendKeys(passwordValue, Keys.ENTER);
         System.out.println("Library logged in successfully!");
     }
+    
+    //Esto es una prueba 2
 
     //Esto es una prueba desde IntellIj
 
